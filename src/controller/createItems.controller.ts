@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { randomUUID } from "crypto";
 
 export class CreateItem{
-    public async Create(req: Request ,res: Response){
+    public async create(req: Request ,res: Response){
         const { nameProduct, value, unit, descripiton } = req.body;
         const uuid = randomUUID();
         const date = new Date();
